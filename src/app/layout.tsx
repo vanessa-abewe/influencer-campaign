@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -16,9 +17,9 @@ export default function RootLayout({
             <div className="flex justify-between items-center">
               <h1 className="text-xl font-bold">Influencer Campaign Management</h1>
               <div className="space-x-4">
-                <a href="/" className="hover:text-blue-200">Home</a>
-                <a href="/influencers" className="hover:text-blue-200">Influencers</a>
-                <a href="/snapshot" className="hover:text-blue-200">Snapshot</a>
+                <Link href="/" className="hover:text-blue-200">Home </Link>
+                <Link href="/influencers" className="hover:text-blue-200">Influencers</Link>
+                <Link href="/snapshot" className="hover:text-blue-200">Snapshot</Link>
               </div>
             </div>
           </div>
